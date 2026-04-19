@@ -1,0 +1,55 @@
+.ibs-wrapper { background: white; border-radius: 16px; border: 1px solid #e2e8f0; font-family: 'Inter', sans-serif; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); overflow: hidden; margin: 24px 0; color: #334155;}
+.ibs-progress { display: flex; border-bottom: 1px solid #f1f5f9; background: #f8fafc; }
+.ibs-step { flex: 1; padding: 16px; text-align: center; font-size: 14px; font-weight: 600; color: #94a3b8; border-bottom: 3px solid transparent; transition: 0.3s; }
+.ibs-step.active { color: #4f46e5; border-bottom-color: #4f46e5; background: white; }
+
+.ibs-content-area { padding: 30px; }
+.ibs-panel { display: none; animation: fadeIn 0.3s ease; }
+.ibs-panel.active { display: block; }
+
+.ibs-panel h3 { margin: 0 0 20px 0; font-size: 20px; color: #0f172a; }
+
+.ibs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.ibs-card { border: 2px solid #e2e8f0; border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; transition: 0.2s; }
+.ibs-card:hover { border-color: #94a3b8; }
+.ibs-card.selected { border-color: #4f46e5; background: #eef2ff; }
+.ibs-icon { font-size: 32px; margin-bottom: 12px; }
+.ibs-card h4 { margin: 0 0 8px 0; color: #1e293b; font-size: 15px; }
+.ibs-card p { margin: 0; font-size: 12px; color: #64748b; }
+
+.ibs-input { width: 100%; max-width: 400px; padding: 12px 16px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 15px; margin-bottom: 20px; outline: none; display: block;}
+.ibs-input:focus { border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+
+.ibs-btn { background: #0f172a; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; transition: 0.2s;}
+.ibs-btn:hover { background: #1e293b; }
+.ibs-btn-success { background: #10b981; }
+.ibs-btn-success:hover { background: #059669; }
+.ibs-btn-text { background: transparent; color: #64748b; border: none; padding: 12px 24px; font-weight: 600; cursor: pointer;}
+.ibs-btn-text:hover { color: #0f172a; }
+
+/* Calendar */
+.ibs-calendar-layout { display: flex; gap: 30px; flex-wrap: wrap; }
+.ibs-calendar { flex: 2; min-width: 300px; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+.ibs-cal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.ibs-cal-header button { background: #f1f5f9; border: none; width: 32px; height: 32px; border-radius: 6px; cursor: pointer; font-weight: bold;}
+.ibs-cal-header button:hover { background: #e2e8f0; }
+
+.ibs-cal-days { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: 600; font-size: 12px; color: #94a3b8; margin-bottom: 8px; }
+.ibs-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.ibs-cal-cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #334155; border-radius: 50%; cursor: pointer; border: 2px solid transparent;}
+.ibs-cal-cell:hover { background: #f1f5f9; }
+.ibs-cal-cell.disabled { color: #cbd5e1; cursor: not-allowed; }
+.ibs-cal-cell.disabled:hover { background: transparent; }
+.ibs-cal-cell.selected { background: #4f46e5; color: white; font-weight: bold; }
+
+.ibs-time-slots { flex: 1; min-width: 250px; background: #f8fafc; border-radius: 12px; padding: 16px; border: 1px solid #e2e8f0;}
+.ibs-slots { display: flex; flex-direction: column; gap: 8px; }
+.ibs-slot { background: white; border: 1px solid #cbd5e1; padding: 10px; border-radius: 8px; text-align: center; cursor: pointer; font-size: 14px; font-weight: 500; transition: 0.2s;}
+.ibs-slot:hover { border-color: #4f46e5; color: #4f46e5; }
+.ibs-slot.selected { background: #4f46e5; color: white; border-color: #4f46e5; }
+
+.ibs-summary { background: #f8fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;}
+.ibs-summary p { margin: 0 0 10px 0; font-size: 15px;}
+.ibs-notice { margin-top: 15px; padding: 12px; background: #eff6ff; color: #1e3a8a; border-radius: 8px; font-size: 13px; font-weight: 500; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }

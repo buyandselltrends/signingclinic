@@ -1,0 +1,85 @@
+/* Global SaaS UI & Mobile Optimizations */
+:root {
+    --ppe-transition: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Animations */
+@keyframes ppeFadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ppeShimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.animate-fade-up {
+    animation: ppeFadeUp 0.6s var(--ppe-transition) forwards;
+}
+
+.skeleton-loading {
+    animation: ppeShimmer 2s infinite linear;
+    background: linear-gradient(to right, #f1f5f9 4%, #e2e8f0 25%, #f1f5f9 36%);
+    background-size: 1000px 100%;
+}
+
+/* Interaction Enhancements */
+button, .btn, .gad-btn, .tm-btn, .ims-btn {
+    transition: all 0.2s var(--ppe-transition);
+    will-change: transform;
+}
+
+button:active, .btn:active {
+    transform: scale(0.97);
+}
+
+/* Mobile First Constraints */
+@media (max-width: 768px) {
+    .gad-portal, .ims-app-container, .tm-app-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+
+    .gad-sidebar, .ims-sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .gad-grid-3, .gad-split-panels, .ims-stats-grid, .tm-settings-grid {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Fix table scrolling on mobile */
+    .gad-table, .ims-table, .wp-list-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Scrollbar Smoothing */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

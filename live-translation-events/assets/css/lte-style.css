@@ -1,0 +1,34 @@
+.lte-app-wrapper {
+    background: #0f172a; border-radius: 16px; overflow: hidden; font-family: 'Inter', sans-serif; color: #f8fafc; margin: 24px 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+    display: flex; flex-direction: column; min-height: 600px;
+}
+.lte-header { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; background: rgba(15,23,42,0.9); }
+.lte-title h2 { margin: 0; color: #fff; font-size: 1.2rem; display: flex; align-items: center; gap: 12px; }
+.lte-ai-badge { background: #10b981; color: #022c22; font-size: 0.7rem; padding: 4px 8px; border-radius: 99px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;}
+
+.lte-link-area { margin-top: 10px; display: flex; gap: 8px; }
+.lte-link-area input { background: #1e293b; border: 1px solid #334155; color: #94a3b8; padding: 6px 12px; border-radius: 6px; font-size: 13px; width: 250px; }
+.lte-btn-secondary { background: #334155; color: #f8fafc; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; transition: 0.2s; font-size: 13px;}
+.lte-btn-secondary:hover { background: #475569; }
+
+.lte-select { background: #1e293b; border: 1px solid #334155; color: #f8fafc; padding: 8px 16px; border-radius: 8px; font-size: 14px; outline: none; }
+
+.lte-meeting-room { display: flex; flex: 1; padding: 20px; gap: 20px; flex-wrap: wrap;}
+.lte-main-speaker { flex: 3; min-width: 400px; position: relative; background: #000; border-radius: 12px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 2px solid #334155;}
+.lte-sidebar { flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 16px; }
+.lte-participant { background: #1e293b; border-radius: 12px; height: 140px; display: flex; align-items: center; justify-content: center; position: relative;}
+.lte-ai-assistant { border: 2px dashed #4f46e5; background: rgba(79, 70, 229, 0.1); }
+
+.lte-video-feed { color: #64748b; font-weight: 500; font-size: 14px;}
+
+.lte-nameplate { position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.6); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; backdrop-filter: blur(4px);}
+
+.lte-live-captions { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 80%; background: rgba(0,0,0,0.7); padding: 16px; border-radius: 12px; text-align: center; backdrop-filter: blur(8px); }
+.lte-subtitle-source { color: #cbd5e1; font-size: 14px; font-style: italic; }
+.lte-subtitle-target { color: #fbd38d; font-size: 18px; font-weight: 600; display: block; margin-top: 4px; }
+
+.lte-toolbar { padding: 16px; display: flex; justify-content: center; gap: 12px; background: #020617; border-top: 1px solid #1e293b;}
+.lte-btn-icon { background: #1e293b; color: white; border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 16px; cursor: pointer; transition: 0.2s; display: flex; align-items: center; justify-content: center; font-weight: 600;}
+.lte-btn-icon:hover { background: #334155; }
+.lte-btn-danger { background: #ef4444; color: white; border: none; padding: 0 24px; border-radius: 99px; font-weight: 600; cursor: pointer; transition: 0.2s;}
+.lte-btn-danger:hover { background: #dc2626; }
