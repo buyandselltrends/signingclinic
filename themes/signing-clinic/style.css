@@ -1,0 +1,38 @@
+/*
+Theme Name: Signing Clinic
+Theme URI: https://example.com/ai-translate-pro
+Author: George Edem Kennedy
+Author URI: https://example.com
+Description: A modern, premium SaaS WordPress theme for AI-powered translation and interpretation platforms.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ai-translate-pro
+Tags: custom-background, custom-logo, custom-menu, flex-header, block-styles, editor-style
+*/
+
+/* Base styles to prevent huge icons before Tailwind loads */
+svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure font is loaded early */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+/* Fix huge logo if custom logo is used */
+.custom-logo-link img {
+    max-width: 200px;
+    height: auto;
+}
+

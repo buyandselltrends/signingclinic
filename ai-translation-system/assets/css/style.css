@@ -1,0 +1,48 @@
+.aits-container {
+    background: #fff; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; padding: 24px; font-family: inherit; margin: 20px 0;
+}
+.aits-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.aits-badge { background: #4f46e5; color: white; font-size: 10px; padding: 3px 8px; border-radius: 99px; vertical-align: middle; margin-left: 8px; }
+.aits-header h3 { margin: 0; font-size: 1.25rem; font-weight: 700; color: #0f172a; }
+
+.aits-credit-panel { display: flex; align-items: center; gap: 12px; }
+.aits-credits { background: #f1f5f9; padding: 4px 12px; border-radius: 99px; font-size: 0.875rem; font-weight: 600; color: #475569; }
+.aits-btn-buy { background: #10b981; color: white; border: none; padding: 4px 12px; border-radius: 99px; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: 0.2s; }
+.aits-btn-buy:hover { background: #059669; }
+.aits-monthly-text { font-size: 0.75rem; color: #94a3b8; text-align: right; margin-bottom: 16px; }
+
+.aits-tools { margin-bottom: 16px; }
+.aits-tools select { padding: 8px 12px; border-radius: 6px; border: 1px solid #cbd5e1; outline: none; width: 200px; max-width: 100%; }
+
+.aits-workspace { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.aits-box { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 10px; position: relative; }
+.aits-box textarea { width: 100%; height: 200px; padding: 12px; border-radius: 8px; border: 1px solid #cbd5e1; resize: vertical; outline: none; font-family: inherit; font-size: 0.95rem; line-height: 1.5; }
+.aits-box textarea:focus { border-color: #4f46e5; box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2); }
+
+/* Drag and Drop Enhanced */
+.aits-dragdrop { border: 2px dashed #cbd5e1; border-radius: 8px; padding: 20px; text-align: center; background: #f8fafc; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; }
+.aits-dragdrop:hover { border-color: #94a3b8; background: #f1f5f9; }
+.aits-dragdrop.dragover { background: #eef2ff; border-color: #4f46e5; transform: scale(1.02); }
+.aits-dragdrop.file-accepted { border-color: #10b981; background: #ecfdf5; }
+.aits-dragdrop.file-error { border-color: #dc2626; background: #fef2f2; }
+.aits-drag-icon { font-size: 24px; margin-bottom: 4px; pointer-events: none; }
+.aits-drag-title { margin: 0 0 4px 0; color: #334155; font-size: 0.9rem; font-weight: 600; pointer-events: none; }
+.aits-drag-subtitle { margin: 0 0 10px 0; color: #64748b; font-size: 0.75rem; pointer-events: none; }
+.aits-file-name { margin-top: 10px; font-size: 13px; color: #10b981; font-weight: 600; word-break: break-all; }
+
+/* Progress Bar */
+.aits-progress { position: absolute; bottom: 10px; left: 10px; right: 10px; background: rgba(255,255,255,0.95); padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+.aits-progress-text { font-size: 12px; color: #4f46e5; margin-bottom: 8px; font-weight: 600; }
+.aits-progress-bar-container { height: 6px; background: #eef2ff; border-radius: 99px; overflow: hidden; }
+.aits-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #4f46e5, #7c3aed); transition: width 0.3s; }
+
+.aits-btn-primary { background: #4f46e5; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+.aits-btn-primary:hover { background: #4338ca; }
+.aits-btn-primary:disabled { background: #94a3b8; cursor: not-allowed; }
+
+.aits-btn-secondary { background: #e2e8f0; color: #334155; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 500; cursor: pointer; transition: background 0.2s; font-size: 0.875rem; pointer-events: auto; }
+.aits-btn-secondary:hover { background: #cbd5e1; }
+
+#aits-message { margin-top: 10px; font-size: 0.875rem; font-weight: 500; }
+.aits-msg-error { color: #dc2626; }
+.aits-msg-success { color: #10b981; }

@@ -1,0 +1,49 @@
+/* We assume users compile Tailwind via CLI. For preview within AI Studio we just import Tailwind. */
+@import "tailwindcss";
+
+@layer base {
+  svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+
+  body {
+    background-color: theme('colors.white');
+    color: theme('colors.gray.900');
+  }
+}
+
+@layer components {
+    article {
+        @apply transition-all duration-300 ease-in-out hover:shadow-lg;
+    }
+    .pagination .page-numbers {
+        @apply px-4 py-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg text-gray-700 dark:text-gray-300;
+    }
+    .pagination .page-numbers.current {
+        @apply bg-blue-600 text-white border-blue-600;
+    }
+    .pagination .next, .pagination .prev {
+        @apply font-bold;
+    }
+}
